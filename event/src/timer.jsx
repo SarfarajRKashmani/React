@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 
 const TimerApp = () => {
-  const [inputSeconds, setInputSeconds] = useState(0); // To store user input in seconds
-  const [timeLeft, setTimeLeft] = useState(0); // To track the remaining time
-  const [isActive, setIsActive] = useState(false); // To track if the timer is active or not
+  const [inputSeconds, setInputSeconds] = useState(0);
+  const [timeLeft, setTimeLeft] = useState(0);
+  const [isActive, setIsActive] = useState(false); 
 
   useEffect(() => {
     let timerInterval;
@@ -16,7 +16,7 @@ const TimerApp = () => {
       setIsActive(false);
     }
 
-    return () => clearInterval(timerInterval); // Cleanup interval on component unmount
+    return () => clearInterval(timerInterval); 
   }, [isActive, timeLeft]);
 
   const startTimer = () => {
