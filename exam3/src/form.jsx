@@ -72,7 +72,7 @@ const Form = () => {
 
       <div>
         <label className="block text-gray-700 text-sm font-bold mb-2">
-          Category:
+        Discription:
         </label>
         <input
           type="text"
