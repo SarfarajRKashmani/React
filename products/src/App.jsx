@@ -1,13 +1,13 @@
-
+import React from 'react'
 import './App.css'
-
+import Products from './products'
 function App() {
   
 
   return (
-    <>
-
-     </>
+    <div>
+     <Products/>
+     </div>
   )
 }
 
